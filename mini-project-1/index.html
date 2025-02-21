@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loan Approval Prediction</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 40px;
+            text-align: center;
+        }
+        form {
+            display: inline-block;
+            text-align: left;
+        }
+        label {
+            font-weight: bold;
+        }
+        input, select {
+            width: 100%;
+            padding: 8px;
+            margin: 5px 0;
+        }
+        button {
+            background-color: green;
+            color: white;
+            padding: 10px;
+            border: none;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: darkgreen;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>🏦 Loan Approval Prediction</h1>
+    <form method="POST">
+        <label>Gender:</label>
+        <select name="gender">
+            <option>Male</option>
+            <option>Female</option>
+        </select>
+        
+        <label>Married:</label>
+        <select name="married">
+            <option>Yes</option>
+            <option>No</option>
+        </select>
+
+        <label>Dependents:</label>
+        <select name="dependents">
+            <option>0</option>
+            <option>1</option>
+            <option>2</option>
+            <option>3+</option>
+        </select>
+
+        <label>Education:</label>
+        <select name="education">
+            <option>Graduate</option>
+            <option>Not Graduate</option>
+        </select>
+
+        <label>Self Employed:</label>
+        <select name="self_employed">
+            <option>Yes</option>
+            <option>No</option>
+        </select>
+
+        <label>Applicant Income:</label>
+        <input type="number" name="applicant_income" required>
+
+        <label>Coapplicant Income:</label>
+        <input type="number" name="coapplicant_income" required>
+
+        <label>Loan Amount:</label>
+        <input type="number" name="loan_amount" required>
+
+        <label>Loan Amount Term (in months):</label>
+        <select name="loan_amount_term">
+            <option>360</option>
+            <option>180</option>
+            <option>120</option>
+            <option>60</option>
+        </select>
+
+        <label>Credit History:</label>
+        <select name="credit_history">
+            <option value="1.0">1.0</option>
+            <option value="0.0">0.0</option>
+        </select>
+
+        <label>Property Area:</label>
+        <select name="property_area">
+            <option>Urban</option>
+            <option>Semi-Urban</option>
+            <option>Rural</option>
+        </select>
+
+        <br><br>
+        <button type="submit">Predict Loan Approval</button>
+    </form>
+
+    <h2>{{ result }}</h2>
+
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loan Approval Prediction</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 40px;
+            text-align: center;
+        }
+        form {
+            display: inline-block;
+            text-align: left;
+        }
+        label {
+            font-weight: bold;
+        }
+        input, select {
+            width: 100%;
+            padding: 8px;
+            margin: 5px 0;
+        }
+        button {
+            background-color: green;
+            color: white;
+            padding: 10px;
+            border: none;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: darkgreen;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>🏦 Loan Approval Prediction</h1>
+    <form method="POST">
+        <label>Gender:</label>
+        <select name="gender">
+            <option>Male</option>
+            <option>Female</option>
+        </select>
+        
+        <label>Married:</label>
+        <select name="married">
+            <option>Yes</option>
+            <option>No</option>
+        </select>
+
+        <label>Dependents:</label>
+        <select name="dependents">
+            <option>0</option>
+            <option>1</option>
+            <option>2</option>
+            <option>3+</option>
+        </select>
+
+        <label>Education:</label>
+        <select name="education">
+            <option>Graduate</option>
+            <option>Not Graduate</option>
+        </select>
+
+        <label>Self Employed:</label>
+        <select name="self_employed">
+            <option>Yes</option>
+            <option>No</option>
+        </select>
+
+        <label>Applicant Income:</label>
+        <input type="number" name="applicant_income" required>
+
+        <label>Coapplicant Income:</label>
+        <input type="number" name="coapplicant_income" required>
+
+        <label>Loan Amount:</label>
+        <input type="number" name="loan_amount" required>
+
+        <label>Loan Amount Term (in months):</label>
+        <select name="loan_amount_term">
+            <option>360</option>
+            <option>180</option>
+            <option>120</option>
+            <option>60</option>
+        </select>
+
+        <label>Credit History:</label>
+        <select name="credit_history">
+            <option value="1.0">1.0</option>
+            <option value="0.0">0.0</option>
+        </select>
+
+        <label>Property Area:</label>
+        <select name="property_area">
+            <option>Urban</option>
+            <option>Semi-Urban</option>
+            <option>Rural</option>
+        </select>
+
+        <br><br>
+        <button type="submit">Predict Loan Approval</button>
+    </form>
+
+    <h2>{{ result }}</h2>
+
+</body>
+</html>
