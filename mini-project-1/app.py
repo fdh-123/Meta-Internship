@@ -3,7 +3,7 @@ import pickle
 import numpy as np
 
 # Load the trained model
-MODEL_PATH ="model1.pkl"
+MODEL_PATH ="https://github.com/fdh-123/Meta-Internship/blob/main/mini-project-1/model1.pkl"
 
 
 try:
