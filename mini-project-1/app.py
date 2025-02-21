@@ -3,7 +3,7 @@ import pickle
 import numpy as np
 
 # Load the trained model
-MODEL_PATH =r"C:\Users\hp\Desktop\render-demo\model1.pkl"
+MODEL_PATH ="model1.pkl"
 
 
 try:
